@@ -1,0 +1,115 @@
+header{
+    background: linear-gradient(to bottom right, $blue2, $blue1);
+    margin: 0;
+    padding: 0 20px;
+
+    .inforshop_logo{
+      background-color: $white;
+      border-bottom-left-radius: 20%;
+      border-bottom-right-radius: 20%;
+      padding: 15px 20px 5px 20px;
+      margin-bottom: 15px;
+      display: block;
+      width: 133px;
+      height: 80px;
+    }
+
+    /* Menu Hamburger */ 
+
+    .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: -250px;
+      background-color: $white;
+      padding-top: 60px;
+      transition: left 0.5s ease;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #111;
+    }
+    
+    .sidenav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    /* Active class */
+    .sidenav.active {
+      left: 0;
+    }
+    
+    /* Close btn */
+    .sidenav .close {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+    }
+    
+    .burger-icon{
+      display: block;
+      font-size: 40px;
+      color: $orange;
+      padding: 30px 30px 40px 50px;
+      background-color: $blue1;
+      border-bottom-left-radius: 90px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+    
+    .cp{
+      color: $white;
+      font-size: 24px;
+      display: grid;
+      grid-template-columns: 70px 70px;
+      column-gap: 40px;
+    }    
+    
+      .img_cp{
+        grid-row: 1;
+        text-align: center;
+        font-size: 40px;
+        cursor: pointer;
+      }
+
+      a{
+        grid-row: 2;
+        text-align: center;
+        cursor: pointer;
+      }  
+    
+    nav{
+      margin-top: 15px;
+    }
+
+      input{
+        padding: 10px;
+        border: none;
+        font-size: 16px;
+        margin: 15px 0;
+      }
+
+      button{
+          padding: 10px;
+          font-size: 16px;
+          background-color: $white;
+          border: none;
+          margin: 15px 0;
+          cursor: pointer;
+      }
+}

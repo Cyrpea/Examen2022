@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InforShop - Commande</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <a><img class="inforshop_logo" src="img/inforshop.png" alt="inforshop_logo"></a>
+
+        <div id="mainMenu" class="sidenav">
+            <a href="#" class="close">×</a>
+            <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Produits</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+          
+        <a id="menuHamburger" href="#" >
+            <span class="burger-icon">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+        </a>
+
+        <div class="cp">
+            <div class="img_cp"><i class="fa fa-user" aria-hidden="true"></i></div>
+            <a>Compte</a>
+            <div class="img_cp"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+            <a>Panier</a>
+        </div>
+        <nav>
+            <input type="text" placeholder="Chercher un produit ...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </nav>
+    </header>
+    <main>
+        <nav>
+            <a class="home_icon"><i class="fa fa-home" aria-hidden="true"></i></a>
+            <p>></p>
+            <a>Mon Panier</a>
+            <p>></p>
+            <a>Commande</a>
+        </nav>
+        <div class="white_square">
+            <div>
+                <h2 class="white_square_title">Adresse de livraison</h2>
+                <form action="">
+                    <label for="rue">Rue *</label>
+                    <input type="text" id="rue" name="rue" value="Rue">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+
+                    <label for="num_maison">Numéro de maison *</label>
+                    <input type="text" id="num_maison" name="num_maison" value="Numéro de maison">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+
+                    <label for="localité">Localité *</label>
+                    <input type="text" id="localité" name="localité" value="Localité">
+                    <i class="fa fa-industry" aria-hidden="true"></i>
+
+                    <label for="code_postal">Code postal *</label>
+                    <input type="text" id="code_postal" name="code_postal" value="Code postal">
+                    <i class="fa fa-industry" aria-hidden="true"></i>
+
+                    <label for="pays">Pays *</label>
+                    <select id="pays" name="pays">
+                        <option value="belgique" selected>Belgique</option>
+                        <option value="pays-bas">Pays-Bas</option>
+                        <option value="france">France</option>
+                        <option value="allemagne">Allemagne</option>
+                        <option value="suisse">Suisse</option>
+                        <option value="luxembourg">Luxembourg</option>
+                    </select>
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                </form> 
+                <h2 class="white_square_title">Adresse de facturation</h2>
+                <form action="">
+                    <label for="rue">Rue</label>
+                    <input type="text" id="rue" name="rue" value="Rue">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+
+                    <label for="num_maison">Numéro de maison</label>
+                    <input type="text" id="num_maison" name="num_maison" value="Numéro de maison">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+
+                    <label for="localité">Localité</label>
+                    <input type="text" id="localité" name="localité" value="Localité">
+                    <i class="fa fa-industry" aria-hidden="true"></i>
+
+                    <label for="code_postal">Code postal</label>
+                    <input type="text" id="code_postal" name="code_postal" value="Code postal">
+                    <i class="fa fa-industry" aria-hidden="true"></i>
+
+                    <label for="pays">Pays</label>
+                    <select id="pays" name="pays">
+                        <option value="belgique" selected>Belgique</option>
+                        <option value="pays-bas">Pays-Bas</option>
+                        <option value="france">France</option>
+                        <option value="allemagne">Allemagne</option>
+                        <option value="suisse">Suisse</option>
+                        <option value="luxembourg">Luxembourg</option>
+                    </select>
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                </form>
+                <h2 class="white_square_title">Moyen de paiement</h2>
+                <form> 
+                    <label for="moyen_de_paiement">Moyen de paiement *</label>
+                    <select id="moyen_de_paiement" name="moyen_de_paiement">
+                        <option value="visa" selected>Visa</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="bancontact">Bancontact</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+           
+                </form>
+                <a class="valider"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Valider</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>© Inforshop.store & site by ISL SCRL</h3>
+    </footer>
+    <script src="js/burger.js"></script>
+</body>
+</html>

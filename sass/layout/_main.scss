@@ -1,0 +1,176 @@
+main{
+    background-color: $mainBG;
+    padding: 20px;
+
+    nav{
+        margin: 20px 0;
+    }
+
+        .home_icon, p, a{
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .home_icon{
+            background-color: $white;
+            color: $blue2;
+            font-size: 26px;
+            padding: 5px 15px;
+        }
+
+        p{
+            color: $orange;
+            font-weight: bold;
+           }
+        
+        a{
+            background-color: $white;
+            padding: 10px 15px;
+          }
+
+    .white_square{
+        background-color: $white;
+        padding: 20px;
+        margin: 15px 0;
+    }
+        .white_square_title, .date{
+            color: $blue2;
+        }
+
+        .maj{
+            color: black;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .cart_top p, .cart_top form{
+            color: black;
+            border-bottom: solid 1px $blue2;
+            padding: 20px 10px 10px 20px;
+            display: block;
+        }
+
+        #quantity{
+            border: none;
+            border-bottom: solid 1px $blue2;
+        }
+
+        .cart_bot p{
+            color: black;
+            padding: 20px 10px 10px 20px;
+            display: block;
+            text-align: right;
+        }
+        
+        .cart_bot .price{
+            color: $blue2;
+            margin-bottom: 30px;
+        }
+
+            label{
+                display: block;
+                color: $blue2;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            #email, #password{
+                display: inline;
+                border-style: none;
+                border-bottom: solid 1px $blue2;
+                margin: 10px 0;
+                width: 100%;
+                max-width: 1100px;
+            }
+
+            #rue, #num_maison, #localité, #code_postal{
+                display: inline;
+                border-style: none;
+                border-bottom: solid 1px $blue2;
+                margin: 10px 0 30px 0;
+                width: 100%;
+                max-width: 1100px;
+            }
+
+            #pays, #moyen_de_paiement{
+                background-color: $mainBG;
+                margin-bottom: 20px;
+            }
+
+            .vconnexion{
+                color: $white;
+                background-color: $blue1;
+                border-color: $blue1;
+                border-style: solid;
+                margin: 10px 0;
+                padding: 5px;
+                margin-bottom: 40px; 
+                border-radius: 5px;
+                display: block;
+            }
+
+            .valider{
+                color: $white;
+                background-color: $blue1;
+                border-color: $blue1;
+                border-style: solid;
+                margin: 10px 0;
+                padding: 5px;
+                margin-bottom: 40px; 
+                border-radius: 5px;
+                display: inline-block;
+            }
+
+        .align_right{
+            display: flex;
+            justify-content: flex-end;
+        }
+            
+            .passer_commande{
+                color: $white;
+                background-color: $blue1;
+                border-color: $blue1;
+                border-style: solid;
+                margin: 10px 0;
+                padding: 5px;
+                margin-bottom: 40px; 
+                border-radius: 5px;
+
+            }
+
+        .main_bot{
+            display: flex;
+            flex-direction: column;
+        }    
+
+            .inscription{
+                color: $white;
+                background-color: $blue1;
+                border-color: $blue1;
+                border-style: solid;
+                padding: 10px;
+                margin-bottom: 10px;
+                width: 70px;
+                border-radius: 5px;
+            }
+
+            .cogoogle{
+                color: $blue1;
+                border-color: $blue1;
+                border-style: solid;
+                padding: 10px;
+                margin: 10px 0;
+                width: 160px;
+                display: flex;
+                align-items: center;
+                vertical-align: middle;
+                border-radius: 5px;
+            }
+
+                img{
+                    height: 20px;
+                    width: 20px;
+                    padding: 5px;
+                    text-align: center;
+                }
+}

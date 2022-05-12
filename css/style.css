@@ -1,0 +1,271 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, Lucia Grande, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+header {
+  background: linear-gradient(to bottom right, #216eb8, #263585);
+  margin: 0;
+  padding: 0 20px;
+  /* Menu Hamburger */
+  /* Active class */
+  /* Close btn */
+}
+header .inforshop_logo {
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  padding: 15px 20px 5px 20px;
+  margin-bottom: 15px;
+  display: block;
+  width: 133px;
+  height: 80px;
+}
+header .sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #FFFFFF;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+}
+header .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+header .sidenav a:hover {
+  color: #111;
+}
+header .sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+header .sidenav.active {
+  left: 0;
+}
+header .sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+header .burger-icon {
+  display: block;
+  font-size: 40px;
+  color: #e37823;
+  padding: 30px 30px 40px 50px;
+  background-color: #263585;
+  border-bottom-left-radius: 90px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+header .cp {
+  color: #FFFFFF;
+  font-size: 24px;
+  display: grid;
+  grid-template-columns: 70px 70px;
+  column-gap: 40px;
+}
+header .img_cp {
+  grid-row: 1;
+  text-align: center;
+  font-size: 40px;
+  cursor: pointer;
+}
+header a {
+  grid-row: 2;
+  text-align: center;
+  cursor: pointer;
+}
+header nav {
+  margin-top: 15px;
+}
+header input {
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  margin: 15px 0;
+}
+header button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  border: none;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+main {
+  background-color: #DCDCDC;
+  padding: 20px;
+}
+main nav {
+  margin: 20px 0;
+}
+main .home_icon, main p, main a {
+  display: inline;
+  margin-right: 10px;
+}
+main .home_icon {
+  background-color: #FFFFFF;
+  color: #216eb8;
+  font-size: 26px;
+  padding: 5px 15px;
+}
+main p {
+  color: #e37823;
+  font-weight: bold;
+}
+main a {
+  background-color: #FFFFFF;
+  padding: 10px 15px;
+}
+main .white_square {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin: 15px 0;
+}
+main .white_square_title, main .date {
+  color: #216eb8;
+}
+main .maj {
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+}
+main .cart_top p, main .cart_top form {
+  color: black;
+  border-bottom: solid 1px #216eb8;
+  padding: 20px 10px 10px 20px;
+  display: block;
+}
+main #quantity {
+  border: none;
+  border-bottom: solid 1px #216eb8;
+}
+main .cart_bot p {
+  color: black;
+  padding: 20px 10px 10px 20px;
+  display: block;
+  text-align: right;
+}
+main .cart_bot .price {
+  color: #216eb8;
+  margin-bottom: 30px;
+}
+main label {
+  display: block;
+  color: #216eb8;
+  font-weight: bold;
+  font-size: 20px;
+}
+main #email, main #password {
+  display: inline;
+  border-style: none;
+  border-bottom: solid 1px #216eb8;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 1100px;
+}
+main #rue, main #num_maison, main #localité, main #code_postal {
+  display: inline;
+  border-style: none;
+  border-bottom: solid 1px #216eb8;
+  margin: 10px 0 30px 0;
+  width: 100%;
+  max-width: 1100px;
+}
+main #pays, main #moyen_de_paiement {
+  background-color: #DCDCDC;
+  margin-bottom: 20px;
+}
+main .vconnexion {
+  color: #FFFFFF;
+  background-color: #263585;
+  border-color: #263585;
+  border-style: solid;
+  margin: 10px 0;
+  padding: 5px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  display: block;
+}
+main .valider {
+  color: #FFFFFF;
+  background-color: #263585;
+  border-color: #263585;
+  border-style: solid;
+  margin: 10px 0;
+  padding: 5px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  display: inline-block;
+}
+main .align_right {
+  display: flex;
+  justify-content: flex-end;
+}
+main .passer_commande {
+  color: #FFFFFF;
+  background-color: #263585;
+  border-color: #263585;
+  border-style: solid;
+  margin: 10px 0;
+  padding: 5px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+main .main_bot {
+  display: flex;
+  flex-direction: column;
+}
+main .inscription {
+  color: #FFFFFF;
+  background-color: #263585;
+  border-color: #263585;
+  border-style: solid;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 70px;
+  border-radius: 5px;
+}
+main .cogoogle {
+  color: #263585;
+  border-color: #263585;
+  border-style: solid;
+  padding: 10px;
+  margin: 10px 0;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+main img {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+footer {
+  background: linear-gradient(to bottom left, #216eb8, #263585);
+  margin: 0;
+  padding: 20px;
+}
+footer h3 {
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */
