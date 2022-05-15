@@ -119,13 +119,16 @@ main{
                 max-width: 1100px;
             }
 
-            #rue, #num_maison, #localité, #code_postal{
+            #rue, #num_maison, #localité, #code_postal, #email, #mdp, #prénom, #nom, #birthday{
                 display: inline;
                 border-style: none;
                 border-bottom: solid 1px $blue2;
                 margin: 10px 0 30px 0;
                 width: 100%;
-                max-width: 1100px;
+            }
+
+            .CGV{
+                display: block;
             }
 
             #pays, #moyen_de_paiement{
@@ -193,7 +196,9 @@ main{
                 border-style: solid;
                 padding: 10px;
                 margin-bottom: 10px;
-                width: 70px;
+                width: auto;
+                min-width: 0;
+                display: table;
                 border-radius: 5px;
             }
 

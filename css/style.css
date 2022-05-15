@@ -209,13 +209,15 @@ main #email, main #password {
   width: 100%;
   max-width: 1100px;
 }
-main #rue, main #num_maison, main #localité, main #code_postal {
+main #rue, main #num_maison, main #localité, main #code_postal, main #email, main #mdp, main #prénom, main #nom, main #birthday {
   display: inline;
   border-style: none;
   border-bottom: solid 1px #216eb8;
   margin: 10px 0 30px 0;
   width: 100%;
-  max-width: 1100px;
+}
+main .CGV {
+  display: block;
 }
 main #pays, main #moyen_de_paiement {
   background-color: #DCDCDC;
@@ -274,7 +276,9 @@ main .inscription {
   border-style: solid;
   padding: 10px;
   margin-bottom: 10px;
-  width: 70px;
+  width: auto;
+  min-width: 0;
+  display: table;
   border-radius: 5px;
 }
 main .cogoogle {
