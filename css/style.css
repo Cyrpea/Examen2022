@@ -12,6 +12,7 @@ header {
   /* Menu Hamburger */
   /* Active class */
   /* Close btn */
+  /* Fin du Menu Hamburger */
 }
 header .inforshop_logo {
   background-color: #FFFFFF;
@@ -131,12 +132,21 @@ main a {
   background-color: #FFFFFF;
   padding: 10px 15px;
 }
+main .big_title, main .white_square .filter {
+  font-weight: normal;
+  color: #216eb8;
+}
 main .white_square {
   background-color: #FFFFFF;
   padding: 20px;
   margin: 15px 0;
 }
-main .white_square_title, main .date {
+main .white_square_title {
+  color: #216eb8;
+  font-weight: bold;
+  font-size: 28px;
+}
+main .date {
   color: #216eb8;
 }
 main .maj {
@@ -153,6 +163,27 @@ main .cart_top p, main .cart_top form {
 main #quantity {
   border: none;
   border-bottom: solid 1px #216eb8;
+}
+main .value label {
+  color: black;
+  font-weight: normal;
+}
+main .value #quantity {
+  padding-left: 10px;
+  border: none;
+  border-bottom: solid 1px #216eb8;
+  width: 100%;
+  margin-bottom: 30px;
+}
+main .slidecontainer {
+  --min:0;
+  --max:250;
+  --step:100;
+  --value:170;
+  --text-value:"170";
+}
+main .slider {
+  width: 100%;
 }
 main .cart_bot p {
   color: black;
@@ -189,6 +220,12 @@ main #rue, main #num_maison, main #localité, main #code_postal {
 main #pays, main #moyen_de_paiement {
   background-color: #DCDCDC;
   margin-bottom: 20px;
+}
+main .checkboxes label, main .checkboxes input {
+  color: black;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 16px;
 }
 main .vconnexion {
   color: #FFFFFF;
@@ -257,6 +294,52 @@ main img {
   width: 20px;
   padding: 5px;
   text-align: center;
+}
+main .article {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin: 15px 0;
+}
+main .pc_gamer_hp {
+  height: 200px;
+  width: 200px;
+  margin: 0;
+}
+main .article h2 {
+  color: #216eb8;
+  border-bottom: 1px solid #216eb8;
+  width: auto;
+  min-width: 0;
+  display: table;
+}
+main .article p {
+  color: black;
+  font-size: 14px;
+  display: block;
+}
+main .achat {
+  display: grid;
+}
+main .achat p {
+  color: #e37823;
+  font-size: 18px;
+  padding: 0;
+  display: inline;
+}
+main .achat button {
+  background-color: #263585;
+  color: #FFFFFF;
+  border-radius: 2px;
+  border: #263585;
+  padding: 5px 10px;
+}
+main .button_number button {
+  color: #216eb8;
+  border: #216eb8 1px solid;
+}
+main .button_number .button_on {
+  color: #e37823;
+  border: #e37823 1px solid;
 }
 
 footer {

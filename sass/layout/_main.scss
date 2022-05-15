@@ -28,12 +28,23 @@ main{
             padding: 10px 15px;
           }
 
+    .big_title, .white_square .filter{
+        font-weight: normal;
+        color: $blue2;
+    }
+
     .white_square{
         background-color: $white;
         padding: 20px;
         margin: 15px 0;
     }
-        .white_square_title, .date{
+        .white_square_title{
+            color: $blue2;
+            font-weight: bold;
+            font-size: 28px;
+        }
+
+        .date{
             color: $blue2;
         }
 
@@ -54,6 +65,31 @@ main{
             border: none;
             border-bottom: solid 1px $blue2;
         }
+
+        .value label{
+            color: black;
+            font-weight: normal;
+        }
+        
+        .value #quantity{
+            padding-left: 10px;
+            border: none;
+            border-bottom: solid 1px $blue2;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .slidecontainer{
+            --min:0; 
+            --max:250; 
+            --step:100; 
+            --value:170; 
+            --text-value:"170";
+        }
+
+            .slider{
+                width: 100%;
+            }
 
         .cart_bot p{
             color: black;
@@ -95,6 +131,13 @@ main{
             #pays, #moyen_de_paiement{
                 background-color: $mainBG;
                 margin-bottom: 20px;
+            }
+
+            .checkboxes label, .checkboxes input{
+                color: black;
+                display: inline-block;
+                font-weight: normal;
+                font-size: 16px;
             }
 
             .vconnexion{
@@ -173,4 +216,60 @@ main{
                     padding: 5px;
                     text-align: center;
                 }
+
+    .article{
+        background-color: $white;
+        padding: 20px;
+        margin: 15px 0;
+    }        
+
+        .pc_gamer_hp{
+            height: 200px;
+            width: 200px;
+            margin: 0;
+        }
+
+        .article h2{
+            color: $blue2;
+            border-bottom: 1px solid $blue2;
+            width: auto;
+            min-width: 0;
+            display: table;
+        }
+
+        .article p{
+            color: black;
+            font-size: 14px;
+            display: block;
+        }
+            
+        .achat{
+            display: grid;
+        }
+        
+            .achat p{
+                color: $orange;
+                font-size: 18px;
+                padding: 0;
+                display: inline;
+            }
+
+            .achat button{
+                background-color: $blue1;
+                color: $white;
+                border-radius: 2px;
+                border: $blue1;
+                padding: 5px 10px;
+            }
+    
+    .button_number button{
+        color: $blue2;
+        border: $blue2 1px solid;
+    }
+
+    .button_number .button_on{
+        color: $orange;
+        border: $orange 1px solid;
+    }
+
 }
