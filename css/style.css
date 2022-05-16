@@ -5,6 +5,10 @@ body {
   font-family: Calibri, Lucia Grande, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
+#bold {
+  font-weight: bold;
+}
+
 header {
   background: linear-gradient(to bottom right, #216eb8, #263585);
   margin: 0;
@@ -200,6 +204,7 @@ main label {
   color: #216eb8;
   font-weight: bold;
   font-size: 20px;
+  margin: 30px 0 10px;
 }
 main #email, main #password {
   display: inline;
@@ -207,13 +212,11 @@ main #email, main #password {
   border-bottom: solid 1px #216eb8;
   margin: 10px 0;
   width: 100%;
-  max-width: 1100px;
 }
-main #rue, main #num_maison, main #localité, main #code_postal, main #email, main #mdp, main #prénom, main #nom, main #birthday {
+main #rue, main #num_maison, main #localité, main #code_postal, main #email, main #mdp, main #prénom, main #nom, main #birthday, main #telephone, main #sujet {
   display: inline;
   border-style: none;
   border-bottom: solid 1px #216eb8;
-  margin: 10px 0 30px 0;
   width: 100%;
 }
 main .CGV {
@@ -264,10 +267,6 @@ main .passer_commande {
   padding: 5px;
   margin-bottom: 40px;
   border-radius: 5px;
-}
-main .main_bot {
-  display: flex;
-  flex-direction: column;
 }
 main .inscription {
   color: #FFFFFF;
@@ -321,13 +320,9 @@ main .article p {
   font-size: 14px;
   display: block;
 }
-main .achat {
-  display: grid;
-}
 main .achat p {
   color: #e37823;
   font-size: 18px;
-  padding: 0;
   display: inline;
 }
 main .achat button {
@@ -335,7 +330,7 @@ main .achat button {
   color: #FFFFFF;
   border-radius: 2px;
   border: #263585;
-  padding: 5px 10px;
+  padding: 10px 5px;
 }
 main .button_number button {
   color: #216eb8;
@@ -344,6 +339,18 @@ main .button_number button {
 main .button_number .button_on {
   color: #e37823;
   border: #e37823 1px solid;
+}
+main .info_contact p {
+  color: black;
+  font-weight: normal;
+  display: block;
+}
+main .saint_laurent_map {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: table;
 }
 
 footer {

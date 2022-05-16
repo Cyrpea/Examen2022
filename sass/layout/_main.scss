@@ -108,6 +108,7 @@ main{
                 color: $blue2;
                 font-weight: bold;
                 font-size: 20px;
+                margin: 30px 0 10px;
             }
 
             #email, #password{
@@ -116,14 +117,13 @@ main{
                 border-bottom: solid 1px $blue2;
                 margin: 10px 0;
                 width: 100%;
-                max-width: 1100px;
             }
 
-            #rue, #num_maison, #localité, #code_postal, #email, #mdp, #prénom, #nom, #birthday{
+            #rue, #num_maison, #localité, #code_postal, #email, #mdp, #prénom, #nom, #birthday, #telephone ,#sujet{
                 display: inline;
                 border-style: none;
                 border-bottom: solid 1px $blue2;
-                margin: 10px 0 30px 0;
+                // margin: 10px 0 30px 0;
                 width: 100%;
             }
 
@@ -181,13 +181,7 @@ main{
                 padding: 5px;
                 margin-bottom: 40px; 
                 border-radius: 5px;
-
             }
-
-        .main_bot{
-            display: flex;
-            flex-direction: column;
-        }    
 
             .inscription{
                 color: $white;
@@ -247,15 +241,10 @@ main{
             font-size: 14px;
             display: block;
         }
-            
-        .achat{
-            display: grid;
-        }
         
             .achat p{
                 color: $orange;
                 font-size: 18px;
-                padding: 0;
                 display: inline;
             }
 
@@ -264,7 +253,7 @@ main{
                 color: $white;
                 border-radius: 2px;
                 border: $blue1;
-                padding: 5px 10px;
+                padding: 10px 5px;
             }
     
     .button_number button{
@@ -277,4 +266,17 @@ main{
         border: $orange 1px solid;
     }
 
+    .info_contact p{
+        color: black;
+        font-weight: normal;
+        display: block;
+    }
+
+    .saint_laurent_map{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        display: table;
+    }
 }
