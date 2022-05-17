@@ -47,26 +47,35 @@
             <a>Commande</a>
         </nav>
         <div class="white_square">
-            <div>
+            <div class="commande">
                 <h2 class="white_square_title">Commande</h2>
                 <h2 class="white_square_title">Adresse de livraison</h2>
                 <form action="">
-                    <label for="rue">Rue *</label>
-                    <input type="text" id="rue" name="rue" value="Rue">
-                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <div class="font_align_right">
+                        <label for="rue">Rue *</label>
+                        <input type="text" id="rue" name="rue" value="Rue">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </div>
 
-                    <label for="num_maison">Numéro de maison *</label>
-                    <input type="text" id="num_maison" name="num_maison" value="Numéro de maison">
-                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    <div class="font_align_right">
+                        <label for="num_maison">Numéro de maison *</label>
+                        <input type="text" id="num_maison" name="num_maison" value="Numéro de maison">
+                        <i class="fa fa-tag" aria-hidden="true"></i>
+                    </div>
 
+                    <div class="font_align_right">
                     <label for="localité">Localité *</label>
                     <input type="text" id="localité" name="localité" value="Localité">
                     <i class="fa fa-industry" aria-hidden="true"></i>
+                    </div>
 
+                    <div class="font_align_right">
                     <label for="code_postal">Code postal *</label>
                     <input type="text" id="code_postal" name="code_postal" value="Code postal">
                     <i class="fa fa-industry" aria-hidden="true"></i>
+                    </div>
 
+                    <div class="font_align_right">
                     <label for="pays">Pays *</label>
                     <select id="pays" name="pays">
                         <option value="belgique" selected>Belgique</option>
@@ -77,25 +86,36 @@
                         <option value="luxembourg">Luxembourg</option>
                     </select>
                     <i class="fa fa-globe" aria-hidden="true"></i>
-                </form> 
+                </div>    
+                </form>
+
                 <h2 class="white_square_title">Adresse de facturation</h2>
                 <form action="">
+                    <div class="font_align_right">
                     <label for="rue">Rue</label>
                     <input type="text" id="rue" name="rue" value="Rue">
                     <i class="fa fa-home" aria-hidden="true"></i>
+                    </div>
 
+                    <div class="font_align_right">
                     <label for="num_maison">Numéro de maison</label>
                     <input type="text" id="num_maison" name="num_maison" value="Numéro de maison">
                     <i class="fa fa-tag" aria-hidden="true"></i>
+                    </div>
 
+                    <div class="font_align_right">
                     <label for="localité">Localité</label>
                     <input type="text" id="localité" name="localité" value="Localité">
                     <i class="fa fa-industry" aria-hidden="true"></i>
+                    </div>
 
+                    <div class="font_align_right">
                     <label for="code_postal">Code postal</label>
                     <input type="text" id="code_postal" name="code_postal" value="Code postal">
                     <i class="fa fa-industry" aria-hidden="true"></i>
+                    </div>
 
+                    <div class="font_align_right">
                     <label for="pays">Pays</label>
                     <select id="pays" name="pays">
                         <option value="belgique" selected>Belgique</option>
@@ -106,9 +126,12 @@
                         <option value="luxembourg">Luxembourg</option>
                     </select>
                     <i class="fa fa-globe" aria-hidden="true"></i>
+                    </div>
                 </form>
+
                 <h2 class="white_square_title">Moyen de paiement</h2>
-                <form> 
+                <form>
+                    <div class="font_align_right"> 
                     <label for="moyen_de_paiement">Moyen de paiement *</label>
                     <select id="moyen_de_paiement" name="moyen_de_paiement">
                         <option value="visa" selected>Visa</option>
@@ -117,7 +140,7 @@
                         <option value="paypal">PayPal</option>
                     </select>
                     <i class="fa fa-credit-card" aria-hidden="true"></i>
-           
+                    </div>
                 </form>
                 <a class="valider"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Valider</a>
             </div>
