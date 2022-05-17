@@ -20,6 +20,7 @@ main{
             padding: 15px 15px;
             display: flex;
             justify-content: center;
+            text-decoration: none;
         }
 
         p{
@@ -31,7 +32,12 @@ main{
             background-color: $white;
             padding: 15px 15px;
             justify-content: center;
-          }
+        }
+            
+        .nav_link{
+            color: $blue2;
+        }
+
     }
 
     .big_title, .white_square .filter{
@@ -45,7 +51,9 @@ main{
         margin: 15px 0;
 
         .index_img{
-            background: url("../../img/indeximg.jpg");
+            height: 100%;
+            width: 100%;
+            padding-bottom: 20px;
         }
 
         .white_square_title{
@@ -83,17 +91,20 @@ main{
             border-bottom: solid 1px $blue2;
         }
 
-        .value label{
-            color: black;
-            font-weight: normal;
-        }
-        
-        .value #quantity{
-            padding-left: 10px;
-            border: none;
-            border-bottom: solid 1px $blue2;
-            width: 100%;
-            margin-bottom: 30px;
+        .value{
+
+            label{
+                color: black;
+                font-weight: normal;
+            }
+            
+            #quantity{
+                padding-left: 10px;
+                border: none;
+                border-bottom: solid 1px $blue2;
+                width: 100%;
+                margin-bottom: 30px;
+            }
         }
 
         .slider{
@@ -147,11 +158,14 @@ main{
             max-width: 100%;
         }
 
-        .commande .fa-home, .commande .fa-tag, .commande .fa-industry, .commande .fa-globe, .commande .fa-credit-card{
-            position: absolute;
-            right: 0;
-            bottom: 35px;
-        }
+        .commande{
+            
+            .fa-home, .fa-tag, .fa-industry, .fa-globe, .fa-credit-card{
+                position: absolute;
+                right: 0;
+                bottom: 35px;
+            }
+        } 
 
         .CGV{
             display: flex;
@@ -176,6 +190,42 @@ main{
             font-size: 16px;
         }
 
+        .connexion{
+
+            .vconnexion{
+                color: $white;
+                background-color: $blue1;
+                border-color: $blue1;
+                border-style: solid;
+                margin: 10px 0 0 0;
+                padding: 10px;
+                border-radius: 5px;
+                display: table;
+                width: auto;
+                min-width: 0%;
+                text-decoration: none;
+            }
+
+            .cogoogle{
+                color: $blue1;
+                border-color: $blue1;
+                border-style: solid;
+                padding: 10px;
+                margin-bottom: 40px;
+                width: 160px;
+                display: flex;
+                align-items: center;
+                vertical-align: middle;
+                border-radius: 5px;
+            }
+
+            p{
+                color: $blue2;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+
         .vconnexion{
             color: $white;
             background-color: $blue1;
@@ -185,7 +235,10 @@ main{
             padding: 5px;
             margin-bottom: 40px; 
             border-radius: 5px;
-            display: block;
+            display: table;
+            width: auto;
+            min-width: 0%;
+            text-decoration: none;
         }
 
         .valider{
@@ -229,7 +282,7 @@ main{
             display: table;
             border-radius: 5px;
             text-decoration: none;
-            }
+        }
 
         .cogoogle{
             color: $blue1;
@@ -242,58 +295,31 @@ main{
             align-items: center;
             vertical-align: middle;
             border-radius: 5px;
+        }
 
-            img{
-                height: 20px;
-                width: 20px;
-                padding: 5px;
-                text-align: center;
+        .main_bot{
+
+            .cogoogle{
+                color: $blue1;
+                border-color: $blue1;
+                border-style: solid;
+                padding: 10px;
+                margin: 10px 0;
+                width: 160px;
+                display: flex;
+                align-items: center;
+                vertical-align: middle;
+                border-radius: 5px;
             }
         }
 
-        .article{
-            background-color: $white;
-            padding: 20px;
-            margin: 15px 0;
-            position: relative;
-
-            .pc_gamer_hp{
-                height: 200px;
-                width: 200px;
-                margin: 0;
-            }
-            
-            h2{
-                color: $blue2;
-                border-bottom: 1px solid $blue2;
-                width: auto;
-                min-width: 0;
-                display: table;
-            }
-
-            p{
-                color: black;
-                font-size: 14px;
-                display: block;
-            }
-                    
-            .achat p{
-                color: $orange;
-                font-size: 18px;
-                display: inline;
-            }
-
-            .achat button{
-                background-color: $blue1;
-                color: $white;
-                border-radius: 2px;
-                border: $blue1;
-                padding: 10px 10px;
-                position: absolute;
-                right: 10px;
-                bottom: 10px;
-            }
-        }        
+        img{
+            height: 20px;
+            width: 20px;
+            padding: 5px;
+            text-align: center;
+        }
+        }
 
         .description{
                 display: block;
@@ -320,16 +346,6 @@ main{
                 }
             }
 
-    .button_number button{
-        color: $blue2;
-        border: $blue2 1px solid;
-    }
-
-    .button_number .button_on{
-        color: $orange;
-        border: $orange 1px solid;
-    }
-
     .info_contact p{
         color: black;
         font-weight: normal;
@@ -353,5 +369,65 @@ main{
         color: $blue2;
         font-size: 20px;
     }
-    }
+    
+
+    .button_number{ 
+
+        .button_on{
+            color: $orange;
+            border: $orange 1px solid;
+        }
+
+        button{
+            color: $blue2;
+            border: $blue2 1px solid;
+        }
+    }   
+
+    .article{
+        background-color: $white;
+        padding: 20px;
+        margin: 15px 0;
+        position: relative;
+
+        .pc_gamer_hp{
+            height: 200px;
+            width: 200px;
+            margin: 0;
+        }
+        
+        h2{
+            color: $blue2;
+            border-bottom: 1px solid $blue2;
+            width: auto;
+            min-width: 0;
+            display: table;
+        }
+
+        p{
+            color: black;
+            font-size: 14px;
+            display: block;
+        }
+                
+        .achat{
+
+            p{
+                color: $orange;
+                font-size: 18px;
+                display: inline;
+            }
+
+            button{
+                background-color: $blue1;
+                color: $white;
+                border-radius: 2px;
+                border: $blue1;
+                padding: 10px 10px;
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+            }
+        }
+    }        
 }

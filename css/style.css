@@ -145,6 +145,7 @@ main nav .home_icon {
   padding: 15px 15px;
   display: flex;
   justify-content: center;
+  text-decoration: none;
 }
 main nav p {
   color: #e37823;
@@ -154,6 +155,9 @@ main nav a {
   background-color: #FFFFFF;
   padding: 15px 15px;
   justify-content: center;
+}
+main nav .nav_link {
+  color: #216eb8;
 }
 main .big_title, main .white_square .filter {
   font-weight: normal;
@@ -165,7 +169,9 @@ main .white_square {
   margin: 15px 0;
 }
 main .white_square .index_img {
-  background: url("../../img/indeximg.jpg");
+  height: 100%;
+  width: 100%;
+  padding-bottom: 20px;
 }
 main .white_square .white_square_title {
   color: #216eb8;
@@ -273,6 +279,36 @@ main .white_square .checkboxes label, main .white_square .checkboxes input {
   font-weight: normal;
   font-size: 16px;
 }
+main .white_square .connexion .vconnexion {
+  color: #FFFFFF;
+  background-color: #263585;
+  border-color: #263585;
+  border-style: solid;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  width: auto;
+  min-width: 0%;
+  text-decoration: none;
+}
+main .white_square .connexion .cogoogle {
+  color: #263585;
+  border-color: #263585;
+  border-style: solid;
+  padding: 10px;
+  margin-bottom: 40px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+main .white_square .connexion p {
+  color: #216eb8;
+  font-size: 18px;
+  font-weight: bold;
+}
 main .white_square .vconnexion {
   color: #FFFFFF;
   background-color: #263585;
@@ -282,7 +318,10 @@ main .white_square .vconnexion {
   padding: 5px;
   margin-bottom: 40px;
   border-radius: 5px;
-  display: block;
+  display: table;
+  width: auto;
+  min-width: 0%;
+  text-decoration: none;
 }
 main .white_square .valider {
   color: #FFFFFF;
@@ -335,41 +374,102 @@ main .white_square .cogoogle {
   vertical-align: middle;
   border-radius: 5px;
 }
-main .white_square .cogoogle img {
+main .white_square .main_bot .cogoogle {
+  color: #263585;
+  border-color: #263585;
+  border-style: solid;
+  padding: 10px;
+  margin: 10px 0;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+main .white_square img {
   height: 20px;
   width: 20px;
   padding: 5px;
   text-align: center;
 }
-main .white_square .article {
+main .description {
+  display: block;
+  padding: 10px 0;
+}
+main .description p {
+  color: gray;
+  display: block;
+  padding-bottom: 5px;
+}
+main .description .achat p {
+  color: #e37823;
+  font-size: 18px;
+  padding: 10px 0;
+}
+main .description button {
+  background-color: #263585;
+  color: #FFFFFF;
+  border-radius: 2px;
+  border: #263585;
+  padding: 10px 10px;
+}
+main .info_contact p {
+  color: black;
+  font-weight: normal;
+  display: block;
+}
+main .saint_laurent_map {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: table;
+}
+main .ecranAOC {
+  height: 100%;
+  width: 100%;
+}
+main .description h3 {
+  color: #216eb8;
+  font-size: 20px;
+}
+main .button_number .button_on {
+  color: #e37823;
+  border: #e37823 1px solid;
+}
+main .button_number button {
+  color: #216eb8;
+  border: #216eb8 1px solid;
+}
+main .article {
   background-color: #FFFFFF;
   padding: 20px;
   margin: 15px 0;
   position: relative;
 }
-main .white_square .article .pc_gamer_hp {
+main .article .pc_gamer_hp {
   height: 200px;
   width: 200px;
   margin: 0;
 }
-main .white_square .article h2 {
+main .article h2 {
   color: #216eb8;
   border-bottom: 1px solid #216eb8;
   width: auto;
   min-width: 0;
   display: table;
 }
-main .white_square .article p {
+main .article p {
   color: black;
   font-size: 14px;
   display: block;
 }
-main .white_square .article .achat p {
+main .article .achat p {
   color: #e37823;
   font-size: 18px;
   display: inline;
 }
-main .white_square .article .achat button {
+main .article .achat button {
   background-color: #263585;
   color: #FFFFFF;
   border-radius: 2px;
@@ -378,55 +478,6 @@ main .white_square .article .achat button {
   position: absolute;
   right: 10px;
   bottom: 10px;
-}
-main .white_square .description {
-  display: block;
-  padding: 10px 0;
-}
-main .white_square .description p {
-  color: gray;
-  display: block;
-  padding-bottom: 5px;
-}
-main .white_square .description .achat p {
-  color: #e37823;
-  font-size: 18px;
-  padding: 10px 0;
-}
-main .white_square .description button {
-  background-color: #263585;
-  color: #FFFFFF;
-  border-radius: 2px;
-  border: #263585;
-  padding: 10px 10px;
-}
-main .white_square .button_number button {
-  color: #216eb8;
-  border: #216eb8 1px solid;
-}
-main .white_square .button_number .button_on {
-  color: #e37823;
-  border: #e37823 1px solid;
-}
-main .white_square .info_contact p {
-  color: black;
-  font-weight: normal;
-  display: block;
-}
-main .white_square .saint_laurent_map {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  display: table;
-}
-main .white_square .ecranAOC {
-  height: 100%;
-  width: 100%;
-}
-main .white_square .description h3 {
-  color: #216eb8;
-  font-size: 20px;
 }
 
 footer {
