@@ -66,7 +66,7 @@ header .sidenav ul {
   padding: 0;
   margin: 0;
 }
-header .sidenav.active {
+header .sidenav .active {
   left: 0;
 }
 header .sidenav .close {
@@ -93,13 +93,13 @@ header .cp {
   grid-template-columns: 70px 70px;
   column-gap: 40px;
 }
-header .img_cp {
+header .cp .img_cp {
   grid-row: 1;
   text-align: center;
   font-size: 40px;
   cursor: pointer;
 }
-header a {
+header .cp a {
   grid-row: 2;
   text-align: center;
   cursor: pointer;
@@ -109,13 +109,13 @@ header a {
 header nav {
   margin-top: 15px;
 }
-header input {
+header nav input {
   padding: 10px;
   border: none;
   font-size: 16px;
   margin: 15px 0;
 }
-header button {
+header nav button {
   padding: 10px;
   font-size: 16px;
   background-color: #FFFFFF;
@@ -135,10 +135,10 @@ main nav {
   flex-direction: row;
   flex-wrap: wrap;
 }
-main .home_icon, main p, main a {
+main nav .home_icon, main nav p, main nav a {
   margin-right: 10px;
 }
-main .home_icon {
+main nav .home_icon {
   background-color: #FFFFFF;
   color: #216eb8;
   font-size: 26px;
@@ -164,79 +164,73 @@ main .white_square {
   padding: 20px;
   margin: 15px 0;
 }
-main .index_img {
-  background-image: url("../../img/indeximg.jpg");
-  width: 900px;
-  height: 500px;
+main .white_square .index_img {
+  background: url("../../img/indeximg.jpg");
 }
-main .white_square_title {
+main .white_square .white_square_title {
   color: #216eb8;
   font-weight: bold;
   font-size: 28px;
 }
-main .date {
+main .white_square .date {
   color: #216eb8;
 }
-main .maj {
+main .white_square .maj {
   color: black;
   display: flex;
   justify-content: flex-end;
 }
-main .cart_top p, main .cart_top form {
+main .white_square .cart_top p, main .white_square .cart_top form {
   color: black;
   border-bottom: solid 1px #216eb8;
   padding: 20px 10px 10px 20px;
   display: block;
 }
-main #quantity {
+main .white_square label {
+  display: block;
+  color: #216eb8;
+  font-weight: bold;
+  font-size: 20px;
+}
+main .white_square #quantity {
   border: none;
   border-bottom: solid 1px #216eb8;
 }
-main .value label {
+main .white_square .value label {
   color: black;
   font-weight: normal;
 }
-main .value #quantity {
+main .white_square .value #quantity {
   padding-left: 10px;
   border: none;
   border-bottom: solid 1px #216eb8;
   width: 100%;
   margin-bottom: 30px;
 }
-main .slidecontainer {
-  --min:0;
-  --max:250;
-  --step:100;
-  --value:170;
-  --text-value:"170";
-}
-main .slider {
+main .white_square .slider {
   width: 100%;
 }
-main .cart_bot p {
+main .white_square .cart_bot p {
   color: black;
   padding: 20px 10px 10px 20px;
   display: block;
   text-align: right;
 }
-main .cart_bot .price {
+main .white_square .cart_bot .price {
   color: #216eb8;
   margin-bottom: 30px;
 }
-main label {
-  display: block;
-  color: #216eb8;
-  font-weight: bold;
-  font-size: 20px;
-}
-main #email, main #password {
+main .white_square #email, main .white_square #password {
   display: inline;
   border-style: none;
   border-bottom: solid 1px #216eb8;
   margin: 10px 0;
   width: 100%;
 }
-main #rue, main #num_maison, main #localité, main #code_postal, main #email, main #mdp, main #prénom, main #nom, main #birthday, main #telephone, main #sujet {
+main .white_square .font_align_right {
+  position: relative;
+}
+main .white_square .font_align_right #rue, main .white_square .font_align_right #num_maison, main .white_square .font_align_right #localité, main .white_square .font_align_right #code_postal, main .white_square .font_align_right #email, main .white_square .font_align_right #mdp, main .white_square .font_align_right #prénom, main .white_square .font_align_right #nom, main .white_square .font_align_right #birthday, main .white_square .font_align_right #telephone, main .white_square .font_align_right #sujet {
   display: inline;
   border-style: none;
   border-bottom: solid 1px #216eb8;
@@ -244,37 +238,42 @@ main #rue, main #num_maison, main #localité, main #code_postal, main #email, ma
   width: 100%;
   max-width: 100%;
 }
-main .font_align_right {
-  position: relative;
+main .white_square .font_align_right #pays, main .white_square .font_align_right #moyen_de_paiement {
+  background-color: #DCDCDC;
+  margin-bottom: 20px;
 }
-main .commande .fa-home, main .commande .fa-tag, main .commande .fa-industry, main .commande .fa-globe, main .commande .fa-credit-card {
+main .white_square #rue, main .white_square #num_maison, main .white_square #localité, main .white_square #code_postal, main .white_square #email, main .white_square #mdp, main .white_square #prénom, main .white_square #nom, main .white_square #birthday, main .white_square #telephone, main .white_square #sujet {
+  display: inline;
+  border-style: none;
+  border-bottom: solid 1px #216eb8;
+  margin: 10px 0 30px 0;
+  width: 100%;
+  max-width: 100%;
+}
+main .white_square .commande .fa-home, main .white_square .commande .fa-tag, main .white_square .commande .fa-industry, main .white_square .commande .fa-globe, main .white_square .commande .fa-credit-card {
   position: absolute;
   right: 0;
   bottom: 35px;
 }
-main .CGV {
+main .white_square .CGV {
   display: flex;
   flex-direction: row;
 }
-main .CGV #CGV {
+main .white_square .CGV #CGV {
   display: inline;
 }
-main .CGV label {
+main .white_square .CGV label {
   width: auto;
   min-width: 0;
   padding-bottom: 20px;
 }
-main #pays, main #moyen_de_paiement {
-  background-color: #DCDCDC;
-  margin-bottom: 20px;
-}
-main .checkboxes label, main .checkboxes input {
+main .white_square .checkboxes label, main .white_square .checkboxes input {
   color: black;
   display: inline-block;
   font-weight: normal;
   font-size: 16px;
 }
-main .vconnexion {
+main .white_square .vconnexion {
   color: #FFFFFF;
   background-color: #263585;
   border-color: #263585;
@@ -285,7 +284,7 @@ main .vconnexion {
   border-radius: 5px;
   display: block;
 }
-main .valider {
+main .white_square .valider {
   color: #FFFFFF;
   background-color: #263585;
   border-color: #263585;
@@ -296,11 +295,11 @@ main .valider {
   border-radius: 5px;
   display: inline-block;
 }
-main .align_right {
+main .white_square .align_right {
   display: flex;
   justify-content: flex-end;
 }
-main .passer_commande {
+main .white_square .passer_commande {
   color: #FFFFFF;
   background-color: #263585;
   border-color: #263585;
@@ -311,7 +310,7 @@ main .passer_commande {
   border-radius: 5px;
   text-decoration: none;
 }
-main .inscription {
+main .white_square .inscription {
   color: #FFFFFF;
   background-color: #263585;
   border-color: #263585;
@@ -324,7 +323,7 @@ main .inscription {
   border-radius: 5px;
   text-decoration: none;
 }
-main .cogoogle {
+main .white_square .cogoogle {
   color: #263585;
   border-color: #263585;
   border-style: solid;
@@ -336,41 +335,41 @@ main .cogoogle {
   vertical-align: middle;
   border-radius: 5px;
 }
-main img {
+main .white_square .cogoogle img {
   height: 20px;
   width: 20px;
   padding: 5px;
   text-align: center;
 }
-main .article {
+main .white_square .article {
   background-color: #FFFFFF;
   padding: 20px;
   margin: 15px 0;
   position: relative;
 }
-main .pc_gamer_hp {
+main .white_square .article .pc_gamer_hp {
   height: 200px;
   width: 200px;
   margin: 0;
 }
-main .article h2 {
+main .white_square .article h2 {
   color: #216eb8;
   border-bottom: 1px solid #216eb8;
   width: auto;
   min-width: 0;
   display: table;
 }
-main .article p {
+main .white_square .article p {
   color: black;
   font-size: 14px;
   display: block;
 }
-main .achat p {
+main .white_square .article .achat p {
   color: #e37823;
   font-size: 18px;
   display: inline;
 }
-main .achat button {
+main .white_square .article .achat button {
   background-color: #263585;
   color: #FFFFFF;
   border-radius: 2px;
@@ -380,52 +379,52 @@ main .achat button {
   right: 10px;
   bottom: 10px;
 }
-main .description {
+main .white_square .description {
   display: block;
   padding: 10px 0;
 }
-main .description p {
+main .white_square .description p {
   color: gray;
   display: block;
   padding-bottom: 5px;
 }
-main .description .achat p {
+main .white_square .description .achat p {
   color: #e37823;
   font-size: 18px;
   padding: 10px 0;
 }
-main .description button {
+main .white_square .description button {
   background-color: #263585;
   color: #FFFFFF;
   border-radius: 2px;
   border: #263585;
   padding: 10px 10px;
 }
-main .button_number button {
+main .white_square .button_number button {
   color: #216eb8;
   border: #216eb8 1px solid;
 }
-main .button_number .button_on {
+main .white_square .button_number .button_on {
   color: #e37823;
   border: #e37823 1px solid;
 }
-main .info_contact p {
+main .white_square .info_contact p {
   color: black;
   font-weight: normal;
   display: block;
 }
-main .saint_laurent_map {
+main .white_square .saint_laurent_map {
   width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
   display: table;
 }
-main .ecranAOC {
+main .white_square .ecranAOC {
   height: 100%;
   width: 100%;
 }
-main .description h3 {
+main .white_square .description h3 {
   color: #216eb8;
   font-size: 20px;
 }

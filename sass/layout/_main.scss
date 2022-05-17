@@ -8,7 +8,6 @@ main{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    }
 
         .home_icon, p, a{
             margin-right: 10px;
@@ -23,16 +22,17 @@ main{
             justify-content: center;
         }
 
-        nav p{
+        p{
             color: $orange;
             font-weight: bold;
            }
         
-        nav a{
+        a{
             background-color: $white;
             padding: 15px 15px;
             justify-content: center;
           }
+    }
 
     .big_title, .white_square .filter{
         font-weight: normal;
@@ -43,12 +43,9 @@ main{
         background-color: $white;
         padding: 20px;
         margin: 15px 0;
-    }
 
         .index_img{
-            background-image: url("../../img/indeximg.jpg");
-            width: 900px;
-            height: 500px;
+            background: url("../../img/indeximg.jpg");
         }
 
         .white_square_title{
@@ -74,6 +71,13 @@ main{
             display: block;
         }
 
+        label{
+            display: block;
+            color: $blue2;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
         #quantity{
             border: none;
             border-bottom: solid 1px $blue2;
@@ -92,17 +96,9 @@ main{
             margin-bottom: 30px;
         }
 
-        .slidecontainer{
-            --min:0; 
-            --max:250; 
-            --step:100; 
-            --value:170; 
-            --text-value:"170";
+        .slider{
+            width: 100%;
         }
-
-            .slider{
-                width: 100%;
-            }
 
         .cart_bot p{
             color: black;
@@ -116,20 +112,16 @@ main{
             margin-bottom: 30px;
         }
 
-            label{
-                display: block;
-                color: $blue2;
-                font-weight: bold;
-                font-size: 20px;
-            }
+        #email, #password{
+            display: inline;
+            border-style: none;
+            border-bottom: solid 1px $blue2;
+            margin: 10px 0;
+            width: 100%;
+        }
 
-            #email, #password{
-                display: inline;
-                border-style: none;
-                border-bottom: solid 1px $blue2;
-                margin: 10px 0;
-                width: 100%;
-            }
+        .font_align_right{
+            position: relative;
 
             #rue, #num_maison, #localité, #code_postal, #email, #mdp, #prénom, #nom, #birthday, #telephone ,#sujet{
                 display: inline;
@@ -140,145 +132,151 @@ main{
                 max-width: 100%;
             }
 
-            .font_align_right{
-                position: relative;
+            #pays, #moyen_de_paiement{
+                background-color: $mainBG;
+                margin-bottom: 20px;
             }
+        }
+        
+        #rue, #num_maison, #localité, #code_postal, #email, #mdp, #prénom, #nom, #birthday, #telephone ,#sujet{
+            display: inline;
+            border-style: none;
+            border-bottom: solid 1px $blue2;
+            margin: 10px 0 30px 0;
+            width: 100%;
+            max-width: 100%;
+        }
 
-            .commande .fa-home, .commande .fa-tag, .commande .fa-industry, .commande .fa-globe, .commande .fa-credit-card{
-                position: absolute;
-                right: 0;
-                bottom: 35px;
-            }
+        .commande .fa-home, .commande .fa-tag, .commande .fa-industry, .commande .fa-globe, .commande .fa-credit-card{
+            position: absolute;
+            right: 0;
+            bottom: 35px;
+        }
 
-            .CGV{
-                display: flex;
-                flex-direction: row;
-            }
+        .CGV{
+            display: flex;
+            flex-direction: row;
             
-                .CGV #CGV{
+                #CGV{
                     display: inline;
                 }
                 
-                .CGV label{
+                label{
                     width: auto;
                     min-width: 0;
                     padding-bottom: 20px;
                 }
 
-            #pays, #moyen_de_paiement{
-                background-color: $mainBG;
-                margin-bottom: 20px;
             }
 
-            .checkboxes label, .checkboxes input{
-                color: black;
-                display: inline-block;
-                font-weight: normal;
-                font-size: 16px;
-            }
+        .checkboxes label, .checkboxes input{
+            color: black;
+            display: inline-block;
+            font-weight: normal;
+            font-size: 16px;
+        }
 
-            .vconnexion{
-                color: $white;
-                background-color: $blue1;
-                border-color: $blue1;
-                border-style: solid;
-                margin: 10px 0;
-                padding: 5px;
-                margin-bottom: 40px; 
-                border-radius: 5px;
-                display: block;
-            }
+        .vconnexion{
+            color: $white;
+            background-color: $blue1;
+            border-color: $blue1;
+            border-style: solid;
+            margin: 10px 0;
+            padding: 5px;
+            margin-bottom: 40px; 
+            border-radius: 5px;
+            display: block;
+        }
 
-            .valider{
-                color: $white;
-                background-color: $blue1;
-                border-color: $blue1;
-                border-style: solid;
-                margin: 10px 0;
-                padding: 5px;
-                margin-bottom: 40px; 
-                border-radius: 5px;
-                display: inline-block;
-            }
+        .valider{
+            color: $white;
+            background-color: $blue1;
+            border-color: $blue1;
+            border-style: solid;
+            margin: 10px 0;
+            padding: 5px;
+            margin-bottom: 40px; 
+            border-radius: 5px;
+            display: inline-block;
+        }
 
         .align_right{
             display: flex;
             justify-content: flex-end;
         }
             
-            .passer_commande{
-                color: $white;
-                background-color: $blue1;
-                border-color: $blue1;
-                border-style: solid;
-                margin: 10px 0;
-                padding: 5px;
-                margin-bottom: 40px; 
-                border-radius: 5px;
-                text-decoration: none;
-            }
-
-            .inscription{
-                color: $white;
-                background-color: $blue1;
-                border-color: $blue1;
-                border-style: solid;
-                padding: 10px;
-                margin-bottom: 10px;
-                width: auto;
-                min-width: 0;
-                display: table;
-                border-radius: 5px;
-                text-decoration: none;
-            }
-
-            .cogoogle{
-                color: $blue1;
-                border-color: $blue1;
-                border-style: solid;
-                padding: 10px;
-                margin: 10px 0;
-                width: 160px;
-                display: flex;
-                align-items: center;
-                vertical-align: middle;
-                border-radius: 5px;
-            }
-
-                img{
-                    height: 20px;
-                    width: 20px;
-                    padding: 5px;
-                    text-align: center;
-                }
-
-    .article{
-        background-color: $white;
-        padding: 20px;
-        margin: 15px 0;
-        position: relative;
-    }        
-
-        .pc_gamer_hp{
-            height: 200px;
-            width: 200px;
-            margin: 0;
+        .passer_commande{
+            color: $white;
+            background-color: $blue1;
+            border-color: $blue1;
+            border-style: solid;
+            margin: 10px 0;
+            padding: 5px;
+            margin-bottom: 40px; 
+            border-radius: 5px;
+            text-decoration: none;
         }
 
-        .article h2{
-            color: $blue2;
-            border-bottom: 1px solid $blue2;
+        .inscription{
+            color: $white;
+            background-color: $blue1;
+            border-color: $blue1;
+            border-style: solid;
+            padding: 10px;
+            margin-bottom: 10px;
             width: auto;
             min-width: 0;
             display: table;
+            border-radius: 5px;
+            text-decoration: none;
+            }
+
+        .cogoogle{
+            color: $blue1;
+            border-color: $blue1;
+            border-style: solid;
+            padding: 10px;
+            margin: 10px 0;
+            width: 160px;
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+            border-radius: 5px;
+
+            img{
+                height: 20px;
+                width: 20px;
+                padding: 5px;
+                text-align: center;
+            }
         }
 
-        .article p{
-            color: black;
-            font-size: 14px;
-            display: block;
-        }
-        
+        .article{
+            background-color: $white;
+            padding: 20px;
+            margin: 15px 0;
+            position: relative;
+
+            .pc_gamer_hp{
+                height: 200px;
+                width: 200px;
+                margin: 0;
+            }
+            
+            h2{
+                color: $blue2;
+                border-bottom: 1px solid $blue2;
+                width: auto;
+                min-width: 0;
+                display: table;
+            }
+
+            p{
+                color: black;
+                font-size: 14px;
+                display: block;
+            }
+                    
             .achat p{
                 color: $orange;
                 font-size: 18px;
@@ -295,31 +293,32 @@ main{
                 right: 10px;
                 bottom: 10px;
             }
+        }        
 
-            .description{
+        .description{
                 display: block;
                 padding: 10px 0;
-            }
             
-                .description p{
+                p{
                     color: gray;
                     display: block;
                     padding-bottom: 5px;
                 }
 
-                .description .achat p{
+                .achat p{
                     color: $orange;
                     font-size: 18px;
                     padding: 10px 0;
                 }
 
-                .description button{
+                button{
                     background-color: $blue1;
                     color: $white;
                     border-radius: 2px;
                     border: $blue1;
                     padding: 10px 10px;
                 }
+            }
 
     .button_number button{
         color: $blue2;
@@ -353,5 +352,6 @@ main{
     .description h3{
         color: $blue2;
         font-size: 20px;
+    }
     }
 }
