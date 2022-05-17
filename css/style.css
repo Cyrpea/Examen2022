@@ -103,6 +103,8 @@ header a {
   grid-row: 2;
   text-align: center;
   cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 header nav {
   margin-top: 15px;
@@ -164,8 +166,8 @@ main .white_square {
 }
 main .index_img {
   background-image: url("../../img/indeximg.jpg");
-  width: 100%;
-  height: 100%;
+  width: 900px;
+  height: 500px;
 }
 main .white_square_title {
   color: #216eb8;
@@ -307,6 +309,7 @@ main .passer_commande {
   padding: 5px;
   margin-bottom: 40px;
   border-radius: 5px;
+  text-decoration: none;
 }
 main .inscription {
   color: #FFFFFF;
@@ -319,6 +322,7 @@ main .inscription {
   min-width: 0;
   display: table;
   border-radius: 5px;
+  text-decoration: none;
 }
 main .cogoogle {
   color: #263585;

@@ -47,8 +47,8 @@ main{
 
         .index_img{
             background-image: url("../../img/indeximg.jpg");
-            width: 100%;
-            height: 100%;
+            width: 900px;
+            height: 500px;
         }
 
         .white_square_title{
@@ -215,6 +215,7 @@ main{
                 padding: 5px;
                 margin-bottom: 40px; 
                 border-radius: 5px;
+                text-decoration: none;
             }
 
             .inscription{
@@ -228,6 +229,7 @@ main{
                 min-width: 0;
                 display: table;
                 border-radius: 5px;
+                text-decoration: none;
             }
 
             .cogoogle{
