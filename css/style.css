@@ -22,11 +22,9 @@ body {
 header {
   background: linear-gradient(to bottom right, #216eb8, #263585);
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   position: relative;
-  /* Menu Hamburger */
-  /* Active class */
-  /* Close btn */
+  /* Début du Menu Hamburger */
   /* Fin du Menu Hamburger */
 }
 header .inforshop_logo {
@@ -34,48 +32,57 @@ header .inforshop_logo {
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
   padding: 15px 20px 5px 20px;
-  margin-bottom: 15px;
-  display: block;
+  margin: 0 0 15px 20px;
+  display: inline-block;
   width: 133px;
   height: 80px;
 }
-header .sidenav {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: -250px;
-  background-color: #FFFFFF;
-  padding-top: 60px;
-  transition: left 0.5s ease;
+header .navbar {
+  width: 100%;
 }
-header .sidenav a {
-  padding: 8px 8px 8px 32px;
+header .navbar .container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+header .navbar .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+header .navbar .nav-container .menu-items {
+  display: flex;
+}
+header .navbar .nav-container ul li {
+  list-style: none;
+}
+header .navbar .nav-container ul a {
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+header .navbar .nav-container ul a:hover {
+  font-weight: bolder;
+}
+header .navbar .nav-container {
   display: block;
-  transition: 0.3s;
+  height: 60px;
 }
-header .sidenav a:hover {
-  color: #111;
-}
-header .sidenav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-header .sidenav .active {
-  left: 0;
-}
-header .sidenav .close {
+header .navbar .nav-container .checkbox {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
+  display: block;
+  height: 100px;
+  width: 100px;
+  top: 10px;
+  right: 10px;
+  z-index: 50;
+  opacity: 0;
+  cursor: pointer;
 }
-header .burger-icon {
+header .navbar .nav-container .burger-icon {
   display: block;
   font-size: 40px;
   color: #e37823;
@@ -86,12 +93,41 @@ header .burger-icon {
   top: 0px;
   right: 0px;
 }
+header .navbar .menu-items {
+  background: linear-gradient(to bottom right, #216eb8, #263585);
+  height: 100%;
+  width: 100%;
+  transform: translateY(-150%);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  z-index: 4;
+}
+header .navbar .menu-items .cross {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #FFFFFF;
+  font-size: 40px;
+}
+header .navbar .menu-items li {
+  margin: 1.2rem 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+header .navbar .nav-container input[type=checkbox]:checked ~ .menu-items {
+  transform: translatey(0);
+}
 header .cp {
   color: #FFFFFF;
   font-size: 24px;
   display: grid;
   grid-template-columns: 70px 70px;
   column-gap: 40px;
+  margin-left: 20px;
 }
 header .cp .img_cp {
   grid-row: 1;
@@ -107,7 +143,7 @@ header .cp a {
   color: #FFFFFF;
 }
 header nav {
-  margin-top: 15px;
+  margin: 15px 0 0 20px;
 }
 header nav input {
   padding: 10px;

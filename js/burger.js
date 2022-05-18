@@ -1,16 +1,16 @@
-var menuHam = document.getElementById("menuHamburger");
-var menuMain = document.getElementById("mainMenu");
+var sidenav = document.getElementById("mySidenav");
+var openBtn = document.getElementById("openBtn");
+var closeBtn = document.getElementById("closeBtn");
 
-if(menuHam != null && menuMain!= null) {
-	menuHam.addEventListener('click', function(e){
-		if(menuMain.className == 'l-main-nav is-active') {
-			menuMain.className = 'l-main-nav';
-		}
-		else {
-			menuMain.className = 'l-main-nav is-active';
-		}
-	});
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  sidenav.classList.add("active");
 }
-else {
-	alert('un des deux éléments pas présents');
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  sidenav.classList.remove("active");
 }
