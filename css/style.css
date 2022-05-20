@@ -19,6 +19,11 @@ body {
   display: inline;
 }
 
+@media screen and (min-width: 1100px) {
+  body {
+    max-width: none;
+  }
+}
 header {
   background: linear-gradient(to bottom right, #216eb8, #263585);
   margin: 0;
@@ -69,7 +74,7 @@ header .navbar .nav-container ul a:hover {
 }
 header .navbar .nav-container {
   display: block;
-  height: 60px;
+  height: 10px;
 }
 header .navbar .nav-container .checkbox {
   position: absolute;
@@ -159,7 +164,73 @@ header nav button {
   margin: 15px 0;
   cursor: pointer;
 }
+header .hidden_menu {
+  display: none;
+}
 
+@media screen and (min-width: 720px) {
+  header {
+    position: relative;
+    padding: 0 40px;
+  }
+  header .cp {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    grid-template-columns: 50px 50px;
+    column-gap: 25px;
+  }
+  header .cp a {
+    font-size: 16px;
+  }
+  header .cp a .fa-user, header .cp a .fa-shopping-cart {
+    font-size: 36px;
+  }
+  header .navbar .container, header .navbar .nav-container {
+    display: none;
+  }
+  header nav {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 270px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  header .hidden_menu {
+    list-style: none;
+    display: block;
+    padding: 20px;
+    margin: 0;
+  }
+  header .hidden_menu li {
+    display: inline;
+  }
+  header .hidden_menu li a {
+    display: inline;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  header {
+    padding: 0 240px;
+  }
+  header .cp {
+    position: absolute;
+    top: 10px;
+    right: 250px;
+  }
+  header nav {
+    position: absolute;
+    top: 0;
+    left: 470px;
+  }
+}
 main {
   background-color: #DCDCDC;
   padding: 20px;
@@ -282,7 +353,7 @@ main .white_square .font_align_right #rue, main .white_square .font_align_right 
 }
 main .white_square .font_align_right #pays, main .white_square .font_align_right #moyen_de_paiement {
   background-color: #DCDCDC;
-  margin-bottom: 20px;
+  margin: 10px 0 20px 0;
 }
 main .white_square #rue, main .white_square #num_maison, main .white_square #localité, main .white_square #code_postal, main .white_square #email, main .white_square #mdp, main .white_square #prénom, main .white_square #nom, main .white_square #birthday, main .white_square #telephone, main .white_square #sujet {
   display: inline;
@@ -410,7 +481,7 @@ main .white_square .cogoogle {
   vertical-align: middle;
   border-radius: 5px;
 }
-main .white_square .main_bot .cogoogle {
+main .white_square .cogoogle {
   color: #263585;
   border-color: #263585;
   border-style: solid;
@@ -422,7 +493,7 @@ main .white_square .main_bot .cogoogle {
   vertical-align: middle;
   border-radius: 5px;
 }
-main .white_square img {
+main .white_square .cogoogle img {
   height: 20px;
   width: 20px;
   padding: 5px;
@@ -456,7 +527,7 @@ main .info_contact p {
 }
 main .saint_laurent_map {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 0;
   padding: 0;
   display: table;
@@ -523,6 +594,17 @@ footer {
 }
 footer h3 {
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 720px) {
+  footer {
+    padding: 20px 60px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  footer {
+    padding: 20px 260px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

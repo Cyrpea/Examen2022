@@ -58,7 +58,7 @@ header{
 
     .nav-container{
       display: block;
-      height: 60px;
+      height: 10px;
 
       .checkbox {
         position: absolute;
@@ -118,51 +118,136 @@ header{
     }
   }
 
-    /* Fin du Menu Hamburger */
+  /* Fin du Menu Hamburger */
     
-    
-    .cp{
+  
+  .cp{
+    color: $white;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 70px 70px;
+    column-gap: 40px;
+    margin-left: 20px;   
+  
+    .img_cp{
+      grid-row: 1;
+      text-align: center;
+      font-size: 40px;
+      cursor: pointer;
+    }
+
+    a{
+      grid-row: 2;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
       color: $white;
-      font-size: 24px;
-      display: grid;
-      grid-template-columns: 70px 70px;
-      column-gap: 40px;
-      margin-left: 20px;   
+    }
     
-      .img_cp{
-        grid-row: 1;
-        text-align: center;
-        font-size: 40px;
+  } 
+  
+  nav{
+    margin: 15px 0 0 20px;
+
+    input{
+      padding: 10px;
+      border: none;
+      font-size: 16px;
+      margin: 15px 0;
+    }
+
+    button{
+        padding: 10px;
+        font-size: 16px;
+        background-color: $white;
+        border: none;
+        margin: 15px 0;
         cursor: pointer;
-      }
+    }
+  }
+
+  .hidden_menu{
+    display: none;  
+  }
+}
+
+
+@media screen and (min-width: 720px){
+
+  header{
+    position: relative;
+    padding: 0 40px;
+
+    .cp{
+      position: absolute;
+      top: 10px;
+      right: 50px;
+      grid-template-columns: 50px 50px;
+      column-gap: 25px;
 
       a{
-        grid-row: 2;
-        text-align: center;
-        cursor: pointer;
-        text-decoration: none;
-        color: $white;
-      }
-      
-    } 
-    
-    nav{
-      margin: 15px 0 0 20px;
-
-      input{
-        padding: 10px;
-        border: none;
         font-size: 16px;
-        margin: 15px 0;
-      }
-
-      button{
-          padding: 10px;
-          font-size: 16px;
-          background-color: $white;
-          border: none;
-          margin: 15px 0;
-          cursor: pointer;
+        
+        .fa-user, .fa-shopping-cart{
+          font-size: 36px;
+        }
       }
     }
+
+    .navbar{
+
+      .container, .nav-container{
+        display: none;
+      }
+    }
+
+    nav{
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 270px;
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+
+    .hidden_menu{
+      list-style: none;
+      display: block;
+      padding: 20px;
+      margin: 0;
+        
+      li{
+        display: inline;
+
+        a{
+          display: inline;
+          text-decoration: none;
+          color: $white;
+          font-weight: 500;
+          font-size: 1.2rem;
+          padding: 0.7rem;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1100px){
+  
+  header{
+    padding: 0 240px;
+
+    .cp{
+      position: absolute;
+      top: 10px;
+      right: 250px;
+    }
+
+    nav{
+      position: absolute;
+      top: 0;
+      left: 470px;
+    }
+  }
 }
