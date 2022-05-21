@@ -428,3 +428,24 @@ main{
         }
     }        
 }
+
+@media screen and (min-width: 720px){
+    main{
+        position: relative;
+        padding: 20px 50px;
+        
+        .white_square{
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px){
+    main{
+        padding: 20px 250px;
+        
+        .white_square{
+            margin: 0;
+        }
+    }
+}

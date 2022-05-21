@@ -200,7 +200,7 @@ header .hidden_menu {
   header .hidden_menu {
     list-style: none;
     display: block;
-    padding: 20px;
+    padding: 20px 20px 20px 0;
     margin: 0;
   }
   header .hidden_menu li {
@@ -587,6 +587,23 @@ main .article .achat button {
   bottom: 10px;
 }
 
+@media screen and (min-width: 720px) {
+  main {
+    position: relative;
+    padding: 20px 50px;
+  }
+  main .white_square {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1100px) {
+  main {
+    padding: 20px 250px;
+  }
+  main .white_square {
+    margin: 0;
+  }
+}
 footer {
   background: linear-gradient(to bottom left, #216eb8, #263585);
   margin: 0;
@@ -598,12 +615,12 @@ footer h3 {
 
 @media screen and (min-width: 720px) {
   footer {
-    padding: 20px 60px;
+    padding: 20px 50px;
   }
 }
 @media screen and (min-width: 1100px) {
   footer {
-    padding: 20px 260px;
+    padding: 20px 250px;
   }
 }
 
