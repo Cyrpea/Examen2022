@@ -62,20 +62,30 @@
             <div>
                 <h2 class="white_square_title">Mon Panier</h2>
                 
-                <div>
-                    <p class="maj">Dernière mise à jour: <span class="date">27/03/2022, 20:25:08</span></p>
+                <div class="panier-responsive">
+                    <p class="maj">Dernière mise à jour<span class="date">: 27/03/2022, 20:25:08</span></p>
                     <div class="cart_top">
-                        <p>Clavier Logitech K860</p>
-                        <form action="">
-                            <label for="quantity"></label>
-                            <input type="number" id="quantity" name="quantity" min="1" max="99" value="1">    
-                        </form>
-                        <p>100 €</p>
-                        <p>21</p>
-                        <p>100 €</p>
-                        <form action="">
-                            <button class="discard" type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>          
-                        </form>
+                        <div class="hidden_content_panier">
+                            <p>Produit</p>
+                            <p>Quantité</p>
+                            <p>Prix unitaire</p>
+                            <p>TVA (%)</p>
+                            <p>Total HTVA</p>
+                            <p>Action</p>
+                        </div>
+                        <div class="content_panier">
+                            <p>Clavier Logitech K860</p>
+                            <form action="">
+                                <label for="quantity"></label>
+                                <input type="number" id="quantity" name="quantity" min="1" max="99" value="1">    
+                            </form>
+                            <p>100 €</p>
+                            <p>21</p>
+                            <p>100 €</p>
+                            <form action="">
+                                <button class="discard" type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>          
+                            </form>
+                        </div>
                     </div>
                     <div class="cart_bot">
                         <p>Total HTVA</p>

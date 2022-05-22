@@ -357,7 +357,7 @@ main .white_square #rue, main .white_square #num_maison, main .white_square #loc
   width: 100%;
   max-width: 100%;
 }
-main .white_square .commande .fa-home, main .white_square .commande .fa-tag, main .white_square .commande .fa-industry, main .white_square .commande .fa-globe, main .white_square .commande .fa-credit-card {
+main .white_square .commande-responsive .fa-home, main .white_square .commande-responsive .fa-tag, main .white_square .commande-responsive .fa-industry, main .white_square .commande-responsive .fa-globe, main .white_square .commande-responsive .fa-credit-card {
   position: absolute;
   right: 0;
   bottom: 35px;
@@ -584,8 +584,11 @@ main .article .achat button {
   border: #263585;
   padding: 10px 10px;
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: 20px;
+  bottom: 15px;
+}
+main .hidden_content_panier {
+  display: none;
 }
 
 @media screen and (min-width: 720px) {
@@ -628,15 +631,22 @@ main .article .achat button {
     width: 100%;
     height: auto;
   }
+  main .white_square .description-responsive h3 {
+    margin-top: 0;
+  }
   main .white_square .description-responsive .description_text {
     display: block;
   }
   main .white_square .description-responsive div, main .white_square .description-responsive p {
-    padding: 0 10px 0 0;
+    padding: 0;
+    margin: 0;
     display: inline;
   }
-  main .white_square .description-responsive h3 {
-    margin-top: 0;
+  main .white_square .description-responsive .description_bot {
+    display: grid;
+    grid-template-columns: 15% 15% 65% 5%;
+    column-width: auto;
+    padding: 20px 5px;
   }
   main .white_square .inscription-responsive form {
     display: grid;
@@ -682,13 +692,32 @@ main .article .achat button {
     grid-template-columns: 30% auto;
   }
   main .produits-responsive .white_square {
-    height: 13%;
+    height: 23%;
     width: 70%;
   }
-  main .produits-responsive .articles_list {
+  main .produits-responsive .articles_box .articles_list {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 30px;
+    width: auto;
+  }
+  main .produits-responsive .articles_box .articles_list .pc_gamer_hp {
+    width: auto;
+    height: auto;
+    max-width: 180px;
+    max-height: 180px;
+  }
+  main .panier-responsive .hidden_content_panier, main .panier-responsive .content_panier {
+    display: grid;
+    grid-template-columns: 30% 15% 15% 15% 15% 10%;
+    column-gap: 0;
+  }
+  main .panier-responsive .hidden_content_panier form, main .panier-responsive .content_panier form {
+    height: 35px;
+  }
+  main .panier-responsive .cart_bot {
+    display: grid;
+    grid-template-columns: 85% auto;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -697,6 +726,22 @@ main .article .achat button {
   }
   main .white_square {
     margin: 0;
+  }
+  main .produits-responsive .white_square {
+    height: 35%;
+    width: 70%;
+  }
+  main .produits-responsive .articles_box {
+    max-width: 550px;
+  }
+  main .produits-responsive .articles_box .articles_list {
+    grid-template-columns: auto auto auto;
+  }
+  main .produits-responsive .articles_box .articles_list .pc_gamer_hp {
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
   }
 }
 footer {
