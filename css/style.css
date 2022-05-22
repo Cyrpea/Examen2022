@@ -274,6 +274,20 @@ main .white_square .index_img {
   width: 100%;
   padding-bottom: 20px;
 }
+main .white_square .a_la_une {
+  text-align: center;
+}
+main .white_square .a_la_une a {
+  text-decoration: none;
+  color: #263585;
+  cursor: pointer;
+}
+main .white_square .a_la_une img {
+  margin-bottom: 40px;
+  width: 50%;
+  height: auto;
+  cursor: pointer;
+}
 main .white_square .white_square_title {
   color: #216eb8;
   font-weight: bold;
@@ -648,6 +662,10 @@ main .hidden_content_panier {
     column-width: auto;
     padding: 20px 5px;
   }
+  main .white_square .description-responsive .description_bot form {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
   main .white_square .inscription-responsive form {
     display: grid;
     grid-template-columns: auto auto;
@@ -704,8 +722,8 @@ main .hidden_content_panier {
   main .produits-responsive .articles_box .articles_list .pc_gamer_hp {
     width: auto;
     height: auto;
-    max-width: 180px;
-    max-height: 180px;
+    max-width: 50%;
+    max-height: auto;
   }
   main .panier-responsive .hidden_content_panier, main .panier-responsive .content_panier {
     display: grid;
@@ -738,10 +756,8 @@ main .hidden_content_panier {
     grid-template-columns: auto auto auto;
   }
   main .produits-responsive .articles_box .articles_list .pc_gamer_hp {
-    width: auto;
-    height: auto;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 100%;
+    max-height: auto;
   }
 }
 footer {
