@@ -49,6 +49,7 @@ main{
         background-color: $white;
         padding: 20px;
         margin: 15px 0;
+        box-shadow: 1px 1px #aaaaaa;
 
         .index_img{
             height: 100%;
@@ -103,7 +104,7 @@ main{
             font-size: 20px;
         }
 
-        #quantity{
+        #quantity, #min_quantity, #max_quantity{
             border: none;
             border-bottom: solid 1px $blue2;
         }
@@ -115,7 +116,7 @@ main{
                 font-weight: normal;
             }
             
-            #quantity{
+            #min_quantity, #max_quantity{
                 padding-left: 10px;
                 border: none;
                 border-bottom: solid 1px $blue2;
@@ -151,7 +152,7 @@ main{
         .font_align_right{
             position: relative;
 
-            #rue, #num_maison, #localité, #code_postal, #email, #mdp, #prénom, #nom, #birthday, #telephone ,#sujet{
+            #rue_livraison, #rue_facturation, #num_maison_livraison, #num_maison_facturation, #localité_livraison, #localité_facturation, #code_postal_livraison, #code_postal_facturation, #email, #mdp, #mdp_confirmation, #prénom, #nom, #birthday, #telephone ,#sujet, #sujet_detail{
                 display: inline;
                 border-style: none;
                 border-bottom: solid 1px $blue2;
@@ -160,13 +161,13 @@ main{
                 max-width: 100%;
             }
 
-            #pays, #moyen_de_paiement{
+            #pays_livraison, #pays_facturation, #moyen_de_paiement{
                 background-color: $mainBG;
                 margin: 10px 0 20px 0;
             }
         }
         
-        #rue, #num_maison, #localité, #code_postal, #email, #mdp, #prénom, #nom, #birthday, #telephone ,#sujet{
+        #rue, #num_maison, #localité, #code_postal, #email, #mdp, #mdp_confirmation, #prénom, #nom, #birthday, #telephone ,#sujet, #sujet_detail{
             display: inline;
             border-style: none;
             border-bottom: solid 1px $blue2;
@@ -352,6 +353,10 @@ main{
                     font-weight: bold;
                 }
 
+                form{
+                    display: inline;
+                }
+
                 a{
                     background-color: $blue1;
                     color: $white;
@@ -443,7 +448,7 @@ main{
                 display: inline;
             }
 
-            button{
+            a{
                 background-color: $blue1;
                 color: $white;
                 border-radius: 2px;
@@ -527,14 +532,9 @@ main{
 
                .description_bot{
                    display: grid;
-                   grid-template-columns: 15% 15% 65% 5%;
+                   grid-template-columns: 15% 20% 15% 45% 5%;
                    column-width: auto;
                    padding: 20px 5px;
-
-                   form{
-                    display: grid;
-                    grid-template-columns: auto auto auto;
-                   }
                 }
             }
 
@@ -556,7 +556,7 @@ main{
                         grid-column: 1;
                     }
                     
-                    .mdp_2{
+                    .mdp_confirmation{
                         grid-row: 2;
                         grid-column: 2;
                     }
@@ -595,7 +595,7 @@ main{
             grid-template-columns: 30% auto;
             
             .white_square{
-                height: 23%;
+                height: 30%;
                 width: 70%;
             }
    
