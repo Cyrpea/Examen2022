@@ -230,7 +230,7 @@ main{
                 border-style: solid;
                 padding: 10px;
                 margin-bottom: 40px;
-                width: 160px;
+                width: auto;
                 display: flex;
                 align-items: center;
                 vertical-align: middle;
@@ -718,6 +718,13 @@ main{
                 .white_square{
                     max-width: 70%;
                     max-height: 30%;
+
+                    .connexion{
+
+                        .cogoogle{
+                            width: auto;
+                        }
+                    }
                 }
             }
         }

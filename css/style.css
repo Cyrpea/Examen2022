@@ -414,7 +414,7 @@ main .white_square .connexion .cogoogle {
   border-style: solid;
   padding: 10px;
   margin-bottom: 40px;
-  width: 160px;
+  width: auto;
   display: flex;
   align-items: center;
   vertical-align: middle;
@@ -792,6 +792,9 @@ main .index-selection .a_la_une-grid .articles_box .pc_gamer_hp {
   main .index-selection .a_la_une-grid .white_square {
     max-width: 70%;
     max-height: 30%;
+  }
+  main .index-selection .a_la_une-grid .white_square .connexion .cogoogle {
+    width: auto;
   }
 }
 @media screen and (min-width: 1100px) {
